@@ -3,7 +3,7 @@ import { FaInstagram, FaFacebook, FaTiktok, FaLinkedin } from 'react-icons/fa';
 export default function Footer() {
     return (
         <footer className="bg-[#f5f5f5] py-12 mt-20 px-10">
-            <div className="container md:mx-auto md:px-[45px]  grid grid-cols-1 md:grid-cols-5 gap-6">
+            <div className="container md:mx-auto md:px-[45px]  flex flex-col md:flex-row justify-center gap-16">
                 {/* Site Map */}
                 <div className="flex flex-col ">
                     <h3 className="font-bold text-lg mb-4">Site Map</h3>
@@ -43,12 +43,6 @@ export default function Footer() {
                         <a href="#" className="text-gray-600 text-sm hover:text-black transition-colors"><FaTiktok size={24} /></a>
                         <a href="#" className="text-gray-600 text-sm hover:text-black transition-colors"><FaLinkedin size={24} /></a>
                     </div>
-                </div>
-
-                {/* Philosophy */}
-                <div className="flex flex-col ">
-                    <h3 className="font-bold text-lg mb-4">Philosophy</h3>
-                    <p className="text-gray-600 text-sm italic">“Building your own home is about desire, fantasy. But it’s achievable; anyone can do it.”</p>
                 </div>
             </div>
 
