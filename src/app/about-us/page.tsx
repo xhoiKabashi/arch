@@ -14,7 +14,7 @@ export default function Page() {
                 <h1 className="text-2xl md:text-3xl">Living Spaces, Designed For Sharing</h1>
             </div>
         </div>
-        <Image src="/about5.ce44f7ef.jpg" className=" mt-10" alt="" /> 
+        <Image src="/about5.ce44f7ef.jpg" height={50} width={1200} className=" mt-10" alt="" /> 
 
         <div className="grid grid-cols-2">
             <div>

@@ -30,7 +30,7 @@ const Navbar = () => {
                 {/* Logo */}
                 <div className="">
                     <Link href="/" aria-label="Home">
-                        <Image src="./logo.svg" alt="Logo" className="h-10" />
+                        <Image src="./logo.svg" alt="Logo" width={50} height={50} />
                     </Link>
                 </div>
 
@@ -90,29 +90,41 @@ const Navbar = () => {
                                 <p className="  font-light text-[18px] text-slate-600 tracking-wider leading-relaxed text-balance">Arki Architecture is a New-York-based studio practice focused on modern design, interiors and landscapes. From our inception in 2007, we have delivered exceptional public. As a full-service firm.</p>
                                 <div className="grid grid-cols-2 gap-3 overflow-hidden pr-14 py-5 w-[300px]">
                                     <Image
-                                        src="./1.jpg"
+                                        src="/1.jpg"
                                         alt=""
+                                        height={300}
+                                        width={300}
                                         className="w-[103px] h-[103px] object-center" />
                                     <Image
-                                        src="./2.jpg"
+                                        src="/2.jpg"
                                         alt=""
+                                        height={300}
+                                        width={300}
                                         className="w-[103px] h-[103px] object-center" />
                                     <Image
-                                        src="./3.jpg"
+                                        src="/3.jpg"
                                         alt=""
+                                        height={300}
+                                        width={300}
                                         className="w-[103px] h-[103px] object-center" />
                                     <Image
-                                        src="./4.jpg"
+                                        src="/4.jpg"
                                         alt=""
+                                        height={300}
+                                        width={300}
                                         className="w-[103px] h-[103px] object-center" />
                                     <Image
-                                        src="./.jpg"
+                                        src="/5.jpg"
                                         alt=""
+                                        height={300}
+                                        width={300}
                                         className="w-[103px] h-[103px] object-center"
                                     />
                                     <Image
-                                        src="./6.jpg"
+                                        src="/6.jpg"
                                         alt=""
+                                        height={300}
+                                        width={300}
                                         className="w-[103px] h-[103px] object-center"
                                     />
                                 </div>
