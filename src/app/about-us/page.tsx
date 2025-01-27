@@ -1,4 +1,5 @@
 
+import Image from "next/image";
 
 export default function Page() {
 
@@ -12,7 +13,9 @@ export default function Page() {
                 <h1 className=" text-2xl md:text-3xl  font-semibold ">We Are Traz. We Create Unique And Sustainable</h1>
                 <h1 className="text-2xl md:text-3xl">Living Spaces, Designed For Sharing</h1>
             </div>
-        </div><img src="/about5.ce44f7ef.jpg" className=" mt-10" alt="" /> 
+        </div>
+        <Image src="/about5.ce44f7ef.jpg" className=" mt-10" alt="" /> 
+
         <div className="grid grid-cols-2">
             <div>
                 <p>We are leading architecture firm dedicated to creating visionary designs that transcend expectations. With our team of highly skilled architects and designers, we specialize in crafting.</p>

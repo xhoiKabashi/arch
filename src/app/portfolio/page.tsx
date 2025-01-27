@@ -15,7 +15,7 @@ export default function Page() {
   return (
     <div className="pt-32 px-2 md:px-40">
       <div className="text-center py-14 space-y-5">
-        <p className="text-4xl md:text-6xl tracking-widest">Arki's Masterpiece</p>
+        <p className="text-4xl md:text-6xl tracking-widest">Arki Masterpiece</p>
         <p className="text-xl md:text-2xl text-slate-600">These are the showcase from our best works</p>
       </div>
       

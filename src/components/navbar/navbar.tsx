@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTiktok } from "react-icons/fa";
 import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -11,8 +12,8 @@ const Navbar = () => {
 
     // Close sidebar when clicking outside
     useEffect(() => {
-        const handleClickOutside = (event: any) => {
-            if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+        const handleClickOutside = (event: MouseEvent) => {
+            if (sidebarRef.current && !sidebarRef.current.contains(event.target as Node)) {
                 setIsMobileMenuOpen(false);
             }
         };
@@ -28,9 +29,9 @@ const Navbar = () => {
             <div className="flex  justify-between md:justify-around px-5 py-5 md:py-10">
                 {/* Logo */}
                 <div className="">
-                    <a href="/" aria-label="Home">
-                        <img src="./logo.svg" alt="Logo" className="h-10" />
-                    </a>
+                    <Link href="/" aria-label="Home">
+                        <Image src="./logo.svg" alt="Logo" className="h-10" />
+                    </Link>
                 </div>
 
                 {/* Desktop Navigation Links */}
@@ -41,9 +42,9 @@ const Navbar = () => {
                     <Link href="about-us" className="text-gray-600 hover:text-amber-600 transition-colors duration-300">
                         About
                     </Link>
-                    <a href="#contact" className="text-gray-600 hover:text-amber-600 transition-colors duration-300">
+                    <Link href="#contact" className="text-gray-600 hover:text-amber-600 transition-colors duration-300">
                         Contact
-                    </a>
+                    </Link>
                     <Link href="portfolio" className="text-gray-600 hover:text-amber-600 transition-colors duration-300">
                         Portfolio
                     </Link>
@@ -88,28 +89,28 @@ const Navbar = () => {
                                 <h1 className="font-semibold tracking-widest text-xl uppercase mb-4">Arki.</h1>
                                 <p className="  font-light text-[18px] text-slate-600 tracking-wider leading-relaxed text-balance">Arki Architecture is a New-York-based studio practice focused on modern design, interiors and landscapes. From our inception in 2007, we have delivered exceptional public. As a full-service firm.</p>
                                 <div className="grid grid-cols-2 gap-3 overflow-hidden pr-14 py-5 w-[300px]">
-                                    <img
+                                    <Image
                                         src="./1.jpg"
                                         alt=""
                                         className="w-[103px] h-[103px] object-center" />
-                                    <img
+                                    <Image
                                         src="./2.jpg"
                                         alt=""
                                         className="w-[103px] h-[103px] object-center" />
-                                    <img
+                                    <Image
                                         src="./3.jpg"
                                         alt=""
                                         className="w-[103px] h-[103px] object-center" />
-                                    <img
+                                    <Image
                                         src="./4.jpg"
                                         alt=""
                                         className="w-[103px] h-[103px] object-center" />
-                                    <img
+                                    <Image
                                         src="./.jpg"
                                         alt=""
                                         className="w-[103px] h-[103px] object-center"
                                     />
-                                    <img
+                                    <Image
                                         src="./6.jpg"
                                         alt=""
                                         className="w-[103px] h-[103px] object-center"

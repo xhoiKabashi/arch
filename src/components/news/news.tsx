@@ -50,7 +50,7 @@ const QuoteCarousel = () => {
                   <MessageSquareQuote />
                 </div>
                 <p className="text-gray-700 italic text-lg mb-6">
-                  "{quote.text}"
+                  {quote.text}
                 </p>
                 <p className="text-gray-900 font-bold text-xl">
                   {quote.author}
