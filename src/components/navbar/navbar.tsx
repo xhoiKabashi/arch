@@ -39,12 +39,12 @@ const Navbar = () => {
                     <Link href="/" className="text-gray-600 hover:text-amber-600 transition-colors duration-300">
                         Home
                     </Link>
-                    <Link href="about-us" className="text-gray-600 hover:text-amber-600 transition-colors duration-300">
+                    {/* <Link href="about-us" className="text-gray-600 hover:text-amber-600 transition-colors duration-300">
                         About
                     </Link>
                     <Link href="#contact" className="text-gray-600 hover:text-amber-600 transition-colors duration-300">
                         Contact
-                    </Link>
+                    </Link> */}
                     <Link href="portfolio" className="text-gray-600 hover:text-amber-600 transition-colors duration-300">
                         Portfolio
                     </Link>
